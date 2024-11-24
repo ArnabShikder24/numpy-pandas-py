@@ -1,8 +1,8 @@
 import numpy as np
 
-# arr = np.array([1,2,3,4,5,6,7,8,9,0])
+arr = np.array([1,2,3,4,5,6,7,8,9,0])
 # 2D Array:
-arr = np.array([[1,2,3],[4,5,6]])
+# arr = np.array([[1,2,3],[4,5,6]])
 
 # Special Arrays:
 # zeros = np.zeros((3,3)) #3x3 matrix of zeros
@@ -57,4 +57,46 @@ arr = np.array([[1,2,3],[4,5,6]])
 # print(np.sum(arr))     # Sum of elements
 # print(np.mean(arr))    # Mean of elements
 # print(np.max(arr))     # Maximum value
+
+# Reshape:
+# reshaped = arr.reshape((2, 2))  # Reshape to 3x4
+
+
+# Flatten:
+# flattened = arr.flatten()  # Convert to 1D 
+
+
+# 7. Boolean Indexing and Filtering
+
+# Filtering with Conditions:
+# print(arr > 3)           # [False False False  True  True]
+# filtered = arr[arr > 3]
+# print(filtered)          # [4 5]
+
+# Set Operations:
+# a = np.array([1, 2, 3])
+# b = np.array([3, 4, 5])
+# print(np.intersect1d(a, b))  # [3]
+# print(np.union1d(a, b))      # [1 2 3 4 5]
+
+# 8. Stacking and Splitting
+
+# Stacking:
+# a = np.array([1, 2])
+# b = np.array([3, 4])
+# stacked = np.vstack((a, b))  # Vertical stack
+
+# Splitting:
+# split = np.split(arr, 2)     # Split into 3 equal parts
+
+# print(split)
+
+# np.save("array.npy", arr)
+# loaded = np.load("array.npy")
+# Save/Load in Text Format:
+# np.savetxt("array.csv", arr, delimiter=",") 
+
+# loaded_txt = np.loadtxt("array.csv", delimiter=",")
+# print(loaded_txt)
+
 
